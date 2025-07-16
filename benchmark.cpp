@@ -1,14 +1,27 @@
 #include <iostream>
-#include <string>
-
-void consoleLog(const std::string& consoleOutput)
+#include <windows.h>
+#include "Timer.h"
+#include "utils.h"
+void testingAlg()
 {
-    std::cout << consoleOutput;
+    // int array[100];
+    // for (size_t i = 0; i < 100; i++)
+    // {
+    //     array[i]=i;
+    // }
+    Sleep(2000);
+    
 }
+
 
 int main()
 {
-    consoleLog("Hello World!");
+    {
+        std::string testName = "Testing Algorithm";
+        Timer test(testName, testingAlg);
+
+    }
+
     return 0;
 
 }
