@@ -18,6 +18,8 @@ int main()
 {
     {
         std::string testName = "Testing Algorithm";
+        // TODO
+        // - Timer() constructor does not call testingAlg
         Timer test(testName, testingAlg);
 
     }

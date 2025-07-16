@@ -6,7 +6,7 @@ Timer::Timer(const std::string &algorithmName, std::function<void()> algorithm)
 {
     m_algorithmName = algorithmName;
     m_start = getTime();
-    algorithm;
+    algorithm();
 }
 
 Timer::~Timer()
